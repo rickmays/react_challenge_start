@@ -59,14 +59,14 @@ function App() {
              {/* Add props to ContactsPage */}
             <ContactsPage
               contacts={contacts}
-              setContacts={setContacts}
+              addContact={addContact}
               />
           </Route>
           <Route path={ROUTES.APPOINTMENTS}>
             {/* Add props to AppointmentsPage */}
             <AppointmentsPage
               appointments={appointments}
-              setAppointments={setAppointments}
+              addAppointment={addAppointment}
               />
           </Route>
         </Switch>
