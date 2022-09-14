@@ -5,17 +5,12 @@ import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage
 import { ContactsPage } from "./containers/contactsPage/ContactsPage";
 
 function App() {
-  /*
-  Define state variables for 
-  contacts and appointments 
-  */
+
   const [contacts, setContacts] = useState(
     []);
 
   const [appointments, setAppointments] = useState(
-    [
-      {title: 'interview', contact: {}, date: '09/30/2022', time: '12:00 PM'}  
-    ]);
+    []);
 
   const ROUTES = {
     CONTACTS: "/contacts",
@@ -64,6 +59,7 @@ function App() {
             <AppointmentsPage
               appointments={appointments}
               addAppointment={addAppointment}
+              contacts={contacts}
               />
           </Route>
         </Switch>
