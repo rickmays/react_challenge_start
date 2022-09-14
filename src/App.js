@@ -10,10 +10,7 @@ function App() {
   contacts and appointments 
   */
   const [contacts, setContacts] = useState(
-    [
-      {name: 'John Doe', phone: '210-555-1212', email: 'johndoe@test.com'},
-      {name: 'Jane Doe', phone: '210-555-2424', email: 'janedoe@test.com'}
-    ]);
+    []);
 
   const [appointments, setAppointments] = useState(
     [
